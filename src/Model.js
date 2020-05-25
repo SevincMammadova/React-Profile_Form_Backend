@@ -1,10 +1,10 @@
 class Model{
     constructor() {
         this.storage = [];
-        
     }
 
     getStorage = () => this.storage;
+    
     
 
     setStorage = array => {

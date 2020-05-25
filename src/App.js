@@ -7,12 +7,12 @@ class App{
         this.app.use(express.json());
         this.app.use('/', express.static(path.resolve(__dirname, '../public')));
         this.controller = controller;
-        this.app.put('/add-obj', this.onPut);
+        this.app.post('/add-obj', this.onPost);
     }
 
     getApp = () => this.app;
 
-    onPut = (req, res) => {
+    onPost = (req, res) => {
         const { body } = req;
         
         this.controller.addObjToModel(body);
