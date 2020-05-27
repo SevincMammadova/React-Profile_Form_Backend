@@ -3,12 +3,12 @@ class Controller{
         this.model = model;
     }
 
-    init() {
-        this.model.setStorage(this.addObjToModel.bind(this));
-    }
-
+   
     addObjToModel(data) {
-        this.model.addElement(data);  
+        const array = this.model.getStorage();
+        // this.model.addElement(data);  
+        array.push(data);
+        this.model.setStorage(array);
     }
 }
 

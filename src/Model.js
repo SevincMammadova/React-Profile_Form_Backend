@@ -1,21 +1,21 @@
 class Model{
     constructor() {
-        this.storage = [];
+        this.storage = [];        
     }
 
     getStorage = () => this.storage;
+
+    setStorage = array => {
+        this.storage = array;
+        console.log(array,'array');
+    }
     
     
-
-    setStorage = obj=> {
-        this.storage = obj;
-        
-    }
-
-    addElement = element => {
-        this.storage.push(element);
-        console.log(this.storage,'jsj');
-    }
+    // addElement = element => {
+    //     this.storage.push(element);
+    //     console.log(this.storage);
+    // }
+   
     
 }
 
