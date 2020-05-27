@@ -7,8 +7,8 @@ class Model{
     
     
 
-    setStorage = array => {
-        this.storage = array;
+    setStorage = obj=> {
+        this.storage = obj;
         
     }
 

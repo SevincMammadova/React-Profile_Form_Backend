@@ -4,7 +4,7 @@ class Controller{
     }
 
     init() {
-        this.model.getStorage(this.addObjToModel.bind(this));
+        this.model.setStorage(this.addObjToModel.bind(this));
     }
 
     addObjToModel(data) {

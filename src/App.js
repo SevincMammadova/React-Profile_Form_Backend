@@ -14,7 +14,6 @@ class App{
 
     onPost = (req, res) => {
         const { body } = req;
-        
         this.controller.addObjToModel(body);
         res.end();
     }
