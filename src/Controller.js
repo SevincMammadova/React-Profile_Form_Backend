@@ -6,8 +6,9 @@ class Controller{
    
     addObjToModel(data) {
         const array = this.model.getStorage();
-        // this.model.addElement(data);  
         array.push(data);
+        console.log(JSON.stringify(data), 'jjj');
+        
         this.model.setStorage(array);
     }
 }

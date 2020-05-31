@@ -7,15 +7,8 @@ class Model{
 
     setStorage = array => {
         this.storage = array;
-        console.log(array,'array');
+        console.log(this.storage,'array');
     }
-    
-    
-    // addElement = element => {
-    //     this.storage.push(element);
-    //     console.log(this.storage);
-    // }
-   
     
 }
 
