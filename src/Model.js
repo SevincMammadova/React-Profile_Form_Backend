@@ -7,9 +7,7 @@ class Model{
 
     setStorage = array => {
         this.storage = array;
-        console.log(this.storage,'array');
     }
-    
 }
 
 module.exports = Model;
